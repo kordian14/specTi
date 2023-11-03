@@ -1,0 +1,83 @@
+/* Reset some default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+/* Input and label styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button style */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Messages list styles */
+ol.messages {
+    margin: 20px;
+    padding: 10px 10px 10px 30px;
+    border-radius: 5px;
+    background-color: #f88;
+    width: 300px;
+}
+
+ol.messages li {
+    list-style-type: disc;
+}
+
+/* Result message styles */
+div.result {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff0;
+    width: 300px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
