@@ -1,9 +1,9 @@
 <?php
 require_once dirname(__FILE__).'/../config.php';
 
-//ochrona kontrolera
-include _ROOT_PATH.'/app/security/check.php';
 
+//załaduj Smarty
+require_once _ROOT_PATH.'/lib/smarty/Smarty.class.php';
 
 //Pobieranie danych
 function getParams(&$kwota,&$procent,&$rata){
@@ -90,4 +90,20 @@ getParams($kwota, $procent, $rata);
 		process($kwota,$procent,$rata,$messages,$result);
 	}
 
-include 'kredyt_widok.php';
+	// 4. Przygotowanie danych dla szablonu
+
+$smarty = new Smarty();
+
+$smarty->assign('app_url',_APP_URL);
+$smarty->assign('root_path',_ROOT_PATH);
+$smarty->assign('page_title','Przykład 04');
+$smarty->assign('page_description','Profesjonalne szablonowanie oparte na bibliotece Smarty');
+$smarty->assign('page_header','Szablony Smarty');
+
+//pozostałe zmienne niekoniecznie muszą istnieć, dlatego sprawdzamy aby nie otrzymać ostrzeżenia
+$smarty->assign('form',$form);
+$smarty->assign('result',$result);
+$smarty->assign('messages',$messages);
+
+// 5. Wywołanie szablonu
+$smarty->display(_ROOT_PATH.'/app/calc.html');

@@ -6,9 +6,12 @@ define('_APP_ROOT', '/php_zadanie_5');
 define('_APP_URL', _SERVER_URL._APP_ROOT);
 define("_ROOT_PATH", dirname(__FILE__));
 
-function out(&$param){
+/*function out(&$param){
 	if (isset($param)){
 		echo $param;
 	}
 }
+Nie jest potrzebne
+*/
+
 ?>

@@ -1,0 +1,43 @@
+{extends file="../templates/main.html"}
+
+{block name=footer}przykładowa tresć stopki wpisana do szablonu głównego z szablonu kalkulatora{/block}
+
+{block name=content}
+
+
+<form class="pure-form pure-form-stacked" action="{$app_url}/app/calc.php" method="post">
+	<label for="id_kwota">Podaj kwotę kredytu: </label>
+	<input id="id_kwota" type="text" name="kwota" value="{$form['id_kwota']}"  ?>" />
+	<br />
+	<label for="id_procent">Podaj procent kredytu: </label>
+	<input id="id_procent" type="text" name="procent" value="{$form['procent']}" ?>" /><br />
+	<label for="id_rata">Podaj ile rat ma kredyt: </label>
+	<input id="id_rata" type="text" name="rata" value="{$form['rata']}" ?>" /><br />
+	<input type="submit" value="Oblicz" />
+</form>	
+
+
+
+{if isset($messages)}
+    {if count($messages) > 0} 
+		<h4>Wystąpiły błędy:</h4>
+		<ol class="err">
+            {foreach  $messages as $msg}
+            {strip}
+                <li>{$msg}</li>
+            {/strip}
+            {/foreach}
+            </ol>
+	
+    {/if}
+{/if}
+
+{if isset($result)}
+	<h4>Wynik</h4>
+	<p class="res">
+	{$result}
+	</p>
+{/if}
+
+</div>
+{/block}>

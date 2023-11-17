@@ -1,0 +1,88 @@
+#body {
+
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: #c9ada7;
+}
+
+#header {
+    margin-bottom: 15px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #22223b;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius:  5rem;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f2e9e4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-radius: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+input[type="submit"]:hover {
+    background-color: #c9ada7;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+
+#messages {
+    margin: 20px;
+    padding: 10px 10px 10px 30px;
+    border-radius: 5px;
+    background-color: #f88;
+    width: 300px;
+}
+
+#result {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 4rem;
+    background-color: #f2e9e4;
+    width: 300px;
+}
+
+#footer {
+    background-color: #22223b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
