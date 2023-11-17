@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{$app_url}/css/styl.css">
+<title>{$page_title|default:"Tytuł domyślny"}</title>
+
+</head>
+
+<div class ='header'>
+<h1>{$page_title|default:"Tytuł domyślny"}</h1>
+
+</div>
+
+
+<div class="content">
+    {block name=content} Domyślna treść zawartości .... {/block}   
+</div><!-- content -->
+
+<div class="footer">
+	<p>
+{block name=footer} Domyślna treść stopki .... {/block}
+	</p>
+	<p>
+		Widok oparty na stylach <a href="" target="_blank"></a>.Szymon Kozłowski
+	</p>
+</div>
+</body>
+</html>
